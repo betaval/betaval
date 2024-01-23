@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Proshop</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+      <link rel="stylesheet" href="css/style.css">          <!--Link to external style sheet-->
+      
+      
+</head>
+
+<body>
+  
+  <nav>
+   
+    <ul>
+      <li><a href="index.html">Home🏡</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="visitorpage.html">Visitor/Enquiry👀</a></li>
+      <li><a href="product.html">Product🛍️</a></li>
+      <li><a href="gallery.html">Gallery📸</a></li>
+      <li><a href="stock.html">Cart/Stock📦</a></li>
+      <li><a href="contact.html">Contact Us📞</a></li>
+      <li><a href="login.html">Login</a></li>
+      <div class="dropdown">
+        <button class="dropbtn"><h3>Need Help?🥰</h3></button>
+        <div class="dropdown-content">
+          <li><a href="login.html">Login</a></li>
+      <li><a href="visitorpage.html">Ask via visitor Enquiry</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      
+        </div>
+      </div>
+    </ul>
+    <a href="index.html"><img src="./images/logoproshop.png" alt="product image" class="logo-img"></a>
+    
+  </nav>
+<header>
+  <div class="headline">
+    <div class="inner">
+      <h1>Visitor Enquiry👀</h1>
+    </div>
+  </div>
+</header>
+
+<section>
+<h1><em>📃📜VISITOR ENQUIRY FORM📃📜</em></h1>
+
+<hr ></hr>
+<br></br>
+<script src="js/popoutvalidate.js"></script>                       <!-- for validate and pop out windows output -->
+<form name="form1"  method="POST" onSubmit="return validate();">
+ 
+  
+ 
+  <table class="e">
+    
+      <td align="left">Full Name </td>
+      <td><input type="text" name="name" placeholder="your full name"></td>
+    </tr>
+    <tr>
+      <td align="left">Email </td>
+      <td><input type="text" name="email" placeholder="youremail@gmail.com"></td>
+    </tr>
+    <tr>
+      <td align="left"><label>Gender</label></td>
+      <td>
+        
+   <input type="radio" id="male" name="gender" value="male">
+   <label for="male">male</label>
+   <input type="radio" id="female" name="gender" value="female">
+   <label for="css">female</label><br>
+      </td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td><select id="location" name="location">
+        <option selected="" value="">(Please select Your Location)</option>
+      <option value="Thailand">Thailand</option>
+       <option value="Malaysia">Malaysia</option>
+       <option value="Singapore">Singapore</option>
+       <option value="Indonesia">Indonesia</option>
+       </select></td>
+    </tr>
+    <tr>
+      <td><b>Please Write Your Enquiry: </b> </td>
+      <td>
+        <textarea name="enquiry" placeholder="Type your enquiry here..." rows="4" cols="40"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <input TYPE="SUBMIT" VALUE="Submit">                <!-- submit -->
+        <button type="reset">Cancel</button>                <!-- reset -->
+      </td>
+    </tr>
+  </table> 
+</form>
+
+  </section>
+  <footer>
+    <link rel="stylesheet" href="css/footer.css">
+    <div class="footer-content">
+        <h3>PRO Shop</h3>
+        <p>With industry experience,
+
+          has established itself as one of the leading Industrial Automation Solutions Provider for the Northern Region of Malaysia.
+          
+          Through its excellent service, fulﬁlls the demand for industrial automation,
+          
+          manufacturing process automation and information technology in Malaysia.</p>
+          <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p><a href="#"> ProShop</a>  </p>
+                <div class="footer-menu">
+                  <ul class="f-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="visitorpage.html">Visitor/Enquiry</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="stock.html">Cart/Stock</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                  </ul>
+                </div>
+    </div>
+
+</footer>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src="js/index.js"></script>
+</body>
+
+</html>
